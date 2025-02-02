@@ -1,0 +1,94 @@
+:root {
+    --main-color: #fefae0;
+    --secondary-color: #faedcd;
+    --tertiary-color: #757a64;
+    --accent-color: #e9edc9;
+    --text-color: #856546;
+    --font-text: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-color);
+    padding-top: 40px;
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--tertiary-color);
+    border: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--tertiary-color);
+    font-style: italic;
+}
+
+.intro {
+    color: var(--text-color);
+    font-size: var(--font-text);
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    padding: 20px;
+    color: var(--tertiary-color);
+    font-size: var(--font-text);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#service-1 {
+    background-color: var(--accent-color);
+}
+
+#service-2 {
+    background-color: var(--tertiary-color);
+    color: var(--main-color);
+}
+
+#service-3 {
+    background-color: var(--accent-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: var(--font-text);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: var(--tertiary-color);
+}
